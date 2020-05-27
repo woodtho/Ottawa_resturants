@@ -7,7 +7,7 @@ library(shinydashboard)
 
 plot_data <-  readxl::read_xlsx(path = "Ottawa_resturants/data/Ottawa resturants Plot Data.xlsx") %>% 
     rename_all(., ~str_remove(., " F"))
-register_google(key = "AIzaSyA6OHhamkObM7HS7TFnbj2cMv16SQgfDHU")
+register_google(key = "xyz")
 
 p <- qmap(location = "Ottawa, Canada") 
 
